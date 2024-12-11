@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_issues/Module/View/home_screen.dart';
+import 'package:flutter_issues/Module/Screens/home_screen.dart';
 import 'package:get/get.dart';
 
 class SplashScreenCubit extends Cubit<dynamic> {

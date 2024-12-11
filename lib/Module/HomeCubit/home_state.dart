@@ -9,14 +9,13 @@ class InitialHomeState extends HomeState {
 
 class GetApiListState extends HomeState {
   final List getListData;
-  final List<int> favorites;
+  final List<dynamic> favorites;
 
   GetApiListState(this.getListData, this.favorites);
 
   @override
   List<Object?> get props => [getListData, favorites];
 }
-
 
 class DataLoadingState extends HomeState {
   @override

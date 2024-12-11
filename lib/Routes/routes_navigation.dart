@@ -1,8 +1,9 @@
-import 'package:flutter_issues/Module/View/comment_view.dart';
-import 'package:flutter_issues/Module/View/home_screen.dart';
+import 'package:flutter_issues/Module/Screens/comment_view.dart';
+import 'package:flutter_issues/Module/Screens/favorite_screen.dart';
+import 'package:flutter_issues/Module/Screens/home_screen.dart';
 import 'package:flutter_issues/Module/SplashScreen/splash_screen.dart';
 import 'package:flutter_issues/Routes/routes_name.dart';
-import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:get/get.dart';
 
 class RoutesNavigation {
   static final routes = [
@@ -17,6 +18,12 @@ class RoutesNavigation {
     GetPage(
       name: RoutesName.commentView,
       page: () => const CommentView(),
+      transition: Transition.leftToRightWithFade,
+    ),
+    GetPage(
+      name: RoutesName.favoriteScreen,
+      transition: Transition.rightToLeftWithFade,
+      page: () => const FavoriteScreen(),
     ),
   ];
 }

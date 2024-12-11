@@ -28,7 +28,9 @@ Widget networkImageLoader({
         );
       } else {
         return SizedBox(
-            width: 17.w, child: const Center(child: Icon(Icons.image)));
+          width: 17.w,
+          child: const Center(child: Icon(Icons.image)),
+        );
       }
     },
   );
